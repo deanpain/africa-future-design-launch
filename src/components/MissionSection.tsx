@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Globe, Heart, Users, ArrowRight } from "lucide-react";
+import bridgeImage from "@/assets/bridge-connection.jpg";
 
 const MissionSection = () => {
   return (
@@ -65,23 +66,24 @@ const MissionSection = () => {
           
           {/* Right side - Image/Visual element */}
           <div className="relative">
-            <div className="relative w-full h-96 lg:h-[500px] rounded-2xl overflow-hidden bg-gradient-to-br from-primary/10 to-secondary/10 border">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20" />
+            <div className="relative w-full h-96 lg:h-[500px] rounded-2xl overflow-hidden">
+              <img 
+                src={bridgeImage} 
+                alt="Hands reaching across bridge symbolizing connection" 
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/30 to-secondary/30" />
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-center space-y-4 p-8">
-                  <div className="w-20 h-20 mx-auto bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center">
+                  <div className="w-20 h-20 mx-auto bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center border border-white/30">
                     <Heart className="w-10 h-10 text-white" />
                   </div>
-                  <h3 className="text-2xl font-bold text-foreground">Building Bridges</h3>
-                  <p className="text-muted-foreground">
+                  <h3 className="text-2xl font-bold text-white">Building Bridges</h3>
+                  <p className="text-white/90">
                     Every donation creates a connection between hearts across continents
                   </p>
                 </div>
               </div>
-              
-              {/* Decorative elements */}
-              <div className="absolute top-4 right-4 w-24 h-24 bg-gradient-to-br from-primary/30 to-secondary/30 rounded-full blur-xl" />
-              <div className="absolute bottom-4 left-4 w-32 h-32 bg-gradient-to-br from-secondary/30 to-accent/30 rounded-full blur-xl" />
             </div>
           </div>
         </div>

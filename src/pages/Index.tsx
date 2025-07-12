@@ -11,8 +11,8 @@ const Index = () => {
       <Header />
       <Hero />
       <GivingSection />
-      <ImpactSection />
       <MissionSection />
+      <ImpactSection />
       <Footer />
     </div>
   );
